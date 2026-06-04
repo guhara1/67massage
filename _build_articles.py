@@ -720,6 +720,68 @@ EXTRA3["yongin-guide"] = """
           ("dongtan-guide.html","동탄 신도시에서 출장마사지 이용하는 법"),
           ("first-time-outcall.html","출장마사지 처음이라면 — 준비·진행·매너"))
 
+# ---- 관련링크 없던 4개 글 보강(함께 읽으면 좋은 글) ----
+EXTRA3["desk-neck-care"] = """
+<h2>핵심 요약</h2>
+<ul>
+<li>목·어깨 통증의 시작은 대개 ‘구부정한 자세를 오래 유지’하는 데 있습니다.</li>
+<li>1시간에 한 번, 가슴 열기·턱 당기기로 자세를 리셋하세요.</li>
+<li>저림·방사통이 있으면 자가관리보다 전문 상담이 먼저입니다.</li>
+</ul>
+""" + rel(("lower-back-deeptissue.html","앉아서 생기는 허리 뻐근함과 딥티슈"),
+          ("foam-rolling-basics.html","폼롤러로 하는 셀프 근막 이완 기본기"))
+
+EXTRA3["first-time-outcall"] = """
+<h2>핵심 요약</h2>
+<ul>
+<li>예약 때 위치·시간·코스·인원을 미리 정리하면 안내가 빨라집니다.</li>
+<li>매트 깔 공간과 가벼운 샤워면 준비는 충분합니다.</li>
+<li>합의된 코스 범위 안에서 진행되며, 압 세기는 언제든 조절됩니다.</li>
+</ul>
+""" + rel(("hygiene-checklist.html","출장마사지 위생, 이것만은 확인하세요"),
+          ("flat-rate-policy.html","정찰제와 ‘추가금 없음’이 중요한 이유"))
+
+EXTRA3["massage-duration"] = """
+<h2>핵심 요약</h2>
+<ul>
+<li>60분은 부분 집중, 90분은 전신, 120분은 여유로운 전신 기준입니다.</li>
+<li>처음엔 90분이 무난하고, 결림이 심하면 부위 집중형을 고르세요.</li>
+<li>시간보다 ‘목적과 부위’를 먼저 정하면 선택이 쉬워집니다.</li>
+</ul>
+""" + rel(("swedish-vs-aroma.html","스웨디시 vs 아로마, 나에게 맞는 관리 고르는 법"),
+          ("first-time-outcall.html","출장마사지 처음이라면 — 준비·진행·매너"))
+
+EXTRA3["swedish-vs-aroma"] = """
+<h2>핵심 요약</h2>
+<ul>
+<li>스웨디시는 압·순환 중심, 아로마는 향·이완 중심입니다.</li>
+<li>피로 회복엔 스웨디시, 스트레스·수면엔 아로마가 무난합니다.</li>
+<li>향 민감·알레르기가 있으면 예약 때 미리 알려주세요.</li>
+</ul>
+""" + rel(("massage-duration.html","60분·90분·120분, 시간은 어떻게 고를까"),
+          ("sleep-recovery.html","잠이 얕은 날, 마사지가 수면에 주는 영향"))
+
+# ---- 매거진 → 서비스·지역 교차링크 (서술형 롱테일 앵커, 동일 앵커 반복 회피) ----
+def xrel(*pairs):
+    items="".join(f'<li><a href="{h}">{t}</a></li>' for h,t in pairs)
+    return f'<h2>함께 보면 좋은 코스·지역 안내</h2>\n<ul class="related">{items}</ul>'
+
+XREL = {
+ "desk-neck-care":       xrel(("../services/deep.html","딥티슈 출장마사지 코스 자세히 보기"),("../services/swedish.html","전신 이완 스웨디시 코스 보기")),
+ "dongtan-guide":        xrel(("../areas/dongtan.html","화성·동탄 출장마사지 권역 안내"),("../areas/byeongjeom.html","병점 출장마사지 안내")),
+ "first-time-outcall":   xrel(("../guide.html","출장마사지 이용 절차와 예약 전 준비"),("../services.html","코스별 정찰 가격표 보기")),
+ "flat-rate-policy":     xrel(("../services.html","코스별 정찰 가격표 확인하기"),("../guide.html","예약 전 확인할 이용 안내")),
+ "foam-rolling-basics":  xrel(("../services/sports.html","운동 후 스포츠 회복 출장마사지 코스"),("../services/deep.html","뭉친 근육 집중 딥티슈 코스")),
+ "hygiene-checklist":    xrel(("../guide.html","출장마사지 이용 안내와 예약 전 준비"),("../about.html","위생·운영 원칙과 회사 소개")),
+ "lower-back-deeptissue":xrel(("../services/deep.html","딥티슈 출장마사지 코스 자세히 보기"),("../services/sports.html","스포츠 회복 코스 보기")),
+ "massage-duration":     xrel(("../services.html","코스별 정찰 가격·시간 안내"),("../services/swedish.html","스웨디시 코스 자세히 보기")),
+ "night-stretch-5min":   xrel(("../services/aroma.html","휴식을 돕는 아로마 테라피 코스"),("../services/sports.html","운동 후 스포츠 회복 코스 보기")),
+ "sleep-recovery":       xrel(("../services/aroma.html","휴식을 돕는 아로마 테라피 코스 보기"),("../services/swedish.html","전신 이완 스웨디시 코스")),
+ "suwon-guide":          xrel(("../areas/suwon.html","수원 출장마사지 권역 전체 안내"),("../areas/yeongtong.html","영통 출장마사지 안내")),
+ "swedish-vs-aroma":     xrel(("../services/swedish.html","스웨디시 출장마사지 코스 자세히 보기"),("../services/aroma.html","아로마 테라피 출장마사지 코스 보기")),
+ "yongin-guide":         xrel(("../areas/yongin.html","용인 출장마사지 권역 전체 안내"),("../areas/suji.html","수지 출장마사지 안내")),
+}
+
 
 def main():
     figre = re.compile(r'<figure class="post-cover">.*?</figure>', re.S)
@@ -748,6 +810,8 @@ def main():
         if extra2: new += extra2.strip() + "\n"
         extra3=EXTRA3.get(slug,"")
         if extra3: new += extra3.strip() + "\n"
+        xr=XREL.get(slug,"")
+        if xr: new += xr.strip() + "\n"
         if med: new += med + "\n"
         if faq: new += faq + "\n"
         new += CALLOUT + "\n"
