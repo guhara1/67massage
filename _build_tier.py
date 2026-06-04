@@ -158,6 +158,11 @@ def head(slug, name, faqs):
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 <meta name="theme-color" content="#16120e" />
+<link rel="icon" href="../assets/favicon.ico" sizes="any" />
+<link rel="icon" type="image/svg+xml" href="../assets/favicon.svg" />
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon-16.png" />
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png" />
 <title>{title}</title>
 <meta name="description" content="{desc}" />
 <link rel="canonical" href="{url}" />
@@ -281,6 +286,8 @@ def build_redirect(slug):
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>{title}</title>
+<link rel="icon" href="../assets/favicon.ico" sizes="any" />
+<link rel="icon" type="image/svg+xml" href="../assets/favicon.svg" />
 <link rel="canonical" href="{canonical}" />
 <meta http-equiv="refresh" content="0; url={target}" />
 <meta name="robots" content="noindex, follow" />
