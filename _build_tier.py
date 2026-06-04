@@ -44,7 +44,7 @@ def header(root):
         <div class="dropdown mega">
           <a class="mega-all" href="{root}areas.html">전체 지역 보기 →</a>
           <div class="mega-cols">
-            <div class="mega-col"><a class="mega-head" href="{root}areas/suwon.html">수원 출장마사지</a><a href="{root}areas/suwon.html#suwon-station">수원역</a><a href="{root}areas/suwon.html#ingyedong">인계동</a><a href="{root}areas/suwon.html#yeongtong">영통</a><a href="{root}areas/suwon.html">권선·장안·팔달·영통구</a></div>
+            <div class="mega-col"><a class="mega-head" href="{root}areas/suwon.html">수원 출장마사지</a><a href="{root}areas/suwon.html#suwon-station">수원역</a><a href="{root}areas/suwon.html#ingyedong">인계동</a><a href="{root}areas/suwon.html#yeongtong">영통</a><a href="{root}areas/suwon.html">권선·장안·팔달·영통</a></div>
             <div class="mega-col"><a class="mega-head" href="{root}areas/yongin.html">용인 출장마사지</a><a href="{root}areas/suji.html">수지</a><a href="{root}areas/giheung.html">기흥</a><a href="{root}areas/giheung.html#singal">신갈</a><a href="{root}areas/giheung.html#dongbaek">동백</a><a href="{root}areas/yongin.html#cheoingu">처인구</a></div>
             <div class="mega-col"><a class="mega-head" href="{root}areas/bundang.html">성남·분당 출장마사지</a><a href="{root}areas/bundang.html">분당</a><a href="{root}areas/bundang.html#jeongja">정자역</a><a href="{root}areas/bundang.html#seohyeon">서현역</a><a href="{root}areas/bundang.html#sunae">수내역</a><a href="{root}areas/bundang.html#migeum">미금역</a></div>
             <div class="mega-col"><a class="mega-head" href="{root}areas/dongtan.html">화성·동탄 출장마사지</a><a href="{root}areas/dongtan.html">동탄</a><a href="{root}areas/dongtan.html#byeongjeom">병점</a><a href="{root}areas/dongtan.html#hyangnam">향남</a></div>
@@ -75,7 +75,7 @@ def header(root):
   <details><summary>출장지역 <i class="caret"></i></summary><div class="sub-links">
     <a href="{root}areas.html">전체 지역 보기</a>
     <a class="reg" href="{root}areas/suwon.html">수원 출장마사지</a>
-    <a href="{root}areas/suwon.html#suwon-station">· 수원역</a><a href="{root}areas/suwon.html#ingyedong">· 인계동</a><a href="{root}areas/suwon.html#yeongtong">· 영통</a><a href="{root}areas/suwon.html">· 권선·장안·팔달·영통구</a>
+    <a href="{root}areas/suwon.html#suwon-station">· 수원역</a><a href="{root}areas/suwon.html#ingyedong">· 인계동</a><a href="{root}areas/suwon.html#yeongtong">· 영통</a><a href="{root}areas/suwon.html">· 권선·장안·팔달·영통</a>
     <a class="reg" href="{root}areas/yongin.html">용인 출장마사지</a>
     <a href="{root}areas/suji.html">· 수지</a><a href="{root}areas/giheung.html">· 기흥</a><a href="{root}areas/giheung.html#singal">· 신갈</a><a href="{root}areas/giheung.html#dongbaek">· 동백</a><a href="{root}areas/yongin.html#cheoingu">· 처인구</a>
     <a class="reg" href="{root}areas/bundang.html">성남·분당 출장마사지</a>
