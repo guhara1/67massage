@@ -1,10 +1,10 @@
 name: GA4 일일 리포트 → 텔레그램
 
-# 매일 한국시간 09:00(UTC 00:00)에 어제 GA4 요약을 텔레그램으로 발송
+# 자동 발송(매일 9시) 일시중지 — GA4 서비스계정 뷰어 권한 완료 후 아래 schedule 주석을 풀면 됩니다.
 on:
-  schedule:
-    - cron: "0 0 * * *"
-  workflow_dispatch: {}   # 수동 실행(테스트)용 버튼
+  # schedule:
+  #   - cron: "0 0 * * *"   # 매일 한국시간 09:00(UTC 00:00)
+  workflow_dispatch: {}   # 수동 실행 버튼만 유지
 
 permissions:
   contents: read
