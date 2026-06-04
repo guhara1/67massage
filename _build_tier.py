@@ -38,7 +38,7 @@ def header(root):
           <a href="{root}services.html#aroma">아로마 테라피 <span>블렌딩 오일 릴렉스</span></a>
           <a href="{root}services.html#deep">딥티슈 <span>뭉친 근육 집중 케어</span></a>
           <a href="{root}services.html#sports">스포츠 회복 <span>운동 후 컨디셔닝</span></a>
-          <a href="{root}services.html#couple">커플·2인 <span>동시 방문 관리</span></a>
+          <a href="{root}services.html#couple">커플·2인 <span>동시 출장마사지</span></a>
         </div></li>
       <li><a href="{root}areas.html">출장지역 <i class="caret"></i></a>
         <div class="dropdown wide grid">
@@ -306,7 +306,7 @@ def build_redirect(slug):
 PARENTS = {
 "suwon": dict(name="수원",
   lead="수원 출장마사지를 찾으신다면, 67 마사지가 검증된 관리사를 수원 전역에 직접 보내 정찰제로 안내합니다. 인계동·수원역·영통·구운동까지 동일 정찰가로 방문합니다.",
-  intro1="수원은 인구 120만이 넘는 경기도 최대 도시로, 인계동 번화가와 수원역 상권, 영통·광교 업무지구, 권선·매탄·구운동 주거지가 한 도시 안에 공존합니다. 생활 반경이 넓고 약속·회식이 잦아, 일과를 마친 뒤 이동 없이 자택이나 숙소에서 받는 방문 관리 수요가 특히 높습니다.",
+  intro1="수원은 인구 120만이 넘는 경기도 최대 도시로, 인계동 번화가와 수원역 상권, 영통·광교 업무지구, 권선·매탄·구운동 주거지가 한 도시 안에 공존합니다. 생활 반경이 넓고 약속·회식이 잦아, 일과를 마친 뒤 이동 없이 자택이나 숙소에서 받는 출장마사지 수요가 특히 높습니다.",
   intro2="67 마사지는 수원 전역을 단일 정찰 권역으로 운영합니다. 권역 안에서는 별도 출장비가 없고, 예약 시 안내된 코스 금액 그대로 결제하시면 됩니다. 아래는 수원 안에서도 이용 성격이 뚜렷이 다른 세부 권역별 안내입니다.",
   cov_intro="수원은 동네마다 방문 동선과 이용 시간대가 다릅니다. 아래 세부 권역 안내를 참고하시면 본인 동네에 맞는 이용 그림이 그려집니다.",
   coverage=[
