@@ -90,14 +90,37 @@ def submit(urls):
         print("⚠️ 전송 실패(네트워크/방화벽 가능):", e)
         return False
 
+def wait_live(urls, tries=24, gap=10):
+    """배포(GitHub Pages) 반영 대기 — 각 URL이 200으로 뜰 때까지 폴링."""
+    import time
+    pending = list(urls)
+    for i in range(tries):
+        still = []
+        for u in pending:
+            try:
+                req = urllib.request.Request(u, method="HEAD", headers={"User-Agent": "indexnow-wait"})
+                with urllib.request.urlopen(req, timeout=10) as r:
+                    if r.status >= 400: still.append(u)
+            except Exception:
+                still.append(u)
+        pending = still
+        if not pending:
+            print(f"✅ 모든 URL 라이브 확인 ({i*gap}s)"); return
+        print(f"⏳ 배포 대기… 미반영 {len(pending)}개 ({(i+1)*gap}s 경과)")
+        time.sleep(gap)
+    print(f"⚠️ 일부 URL이 아직 미반영({len(pending)}개)이지만 통보를 진행합니다.")
+
 def main():
-    urls, dry = collect(sys.argv[1:])
+    args = sys.argv[1:]
+    urls, dry = collect(args)
     if not urls:
         print("통보할 URL이 없습니다."); return
     print(f"대상 {len(urls)}개 URL:")
     for u in urls: print("  -", u)
     if dry:
         print("\n[--dry] 전송하지 않았습니다."); return
+    if "--wait" in args:
+        wait_live(urls)
     submit(urls)
 
 if __name__ == "__main__":

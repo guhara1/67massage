@@ -1,0 +1,33 @@
+name: IndexNow 자동 색인 통보
+
+# main 에 글(HTML)이나 사이트맵이 바뀌어 푸시되면,
+# GitHub Pages 배포 반영을 기다린 뒤 변경된 URL을 Bing·Naver·Yandex 등에 통보한다.
+on:
+  push:
+    branches: [main]
+    paths:
+      - '**.html'
+      - 'sitemap.xml'
+
+permissions:
+  contents: read
+
+# 같은 브랜치에서 연속 푸시가 나면 최신 것만 실행
+concurrency:
+  group: indexnow-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout (직전 커밋까지)
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: GitHub Pages 빌드 여유 시간
+        run: sleep 45
+
+      - name: 변경된 URL을 IndexNow에 통보 (라이브 반영 대기 포함)
+        run: python3 _indexnow.py --changed --wait
