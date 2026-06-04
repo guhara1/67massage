@@ -289,6 +289,7 @@ body.menu-open .scrim { opacity: 1; visibility: visible; }
 .mag-card:hover { transform: translateY(-6px); border-color: var(--gold-deep); }
 .mag-card .thumb { aspect-ratio: 16/10; background: linear-gradient(135deg, #2a2014, #16110b); position: relative; overflow: hidden; }
 .mag-card .thumb span { position: absolute; inset: 0; display: grid; place-items: center; font-family: var(--font-display); font-size: 2.6rem; color: rgba(201,168,106,.35); }
+.mag-card .thumb img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; }
 .mag-card .body { padding: 24px; flex: 1; display: flex; flex-direction: column; }
 .mag-card .cat { font-size: .72rem; letter-spacing: .18em; text-transform: uppercase; color: var(--gold); }
 .mag-card h3 { font-family: var(--font-display); font-size: 1.18rem; margin: 10px 0 8px; line-height: 1.4; }
