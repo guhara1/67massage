@@ -29,7 +29,7 @@ def header(root):
     return f"""<header class="header">
   <div class="wrap nav">
     <a class="brand" href="{root}index.html" aria-label="67 마사지 홈">
-      <span class="mark">67<b>마사지</b></span><span class="sub">Premium&nbsp;Care</span>
+      <img class="brand-logo" src="{root}assets/images/logo-mark.png" alt="67 마사지" width="44" height="35" /><span class="mark">67<b>마사지</b></span><span class="sub">Premium&nbsp;Care</span>
     </a>
     <nav aria-label="주 메뉴"><ul class="menu">
       <li><a href="{root}services.html">서비스 안내 <i class="caret"></i></a>
@@ -86,7 +86,7 @@ def header(root):
 def footer(root):
     return f"""<footer class="footer"><div class="wrap">
   <div class="footer-top">
-    <div><a class="brand" href="{root}index.html"><span class="mark">67<b>마사지</b></span></a>
+    <div><a class="brand" href="{root}index.html"><img class="brand-logo" src="{root}assets/images/logo-mark.png" alt="67 마사지" width="44" height="35" /><span class="mark">67<b>마사지</b></span></a>
       <p class="desc">검증된 관리사가 직접 방문하는 경기 남부 프리미엄 출장 관리 서비스. 정찰제와 위생 원칙을 지킵니다.</p></div>
     <div><h5>서비스</h5><ul class="fl">
       <li><a href="{root}services.html#swedish">스웨디시</a></li><li><a href="{root}services.html#aroma">아로마 테라피</a></li>

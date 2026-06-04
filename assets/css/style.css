@@ -94,7 +94,8 @@ body::before {
   border-bottom-color: var(--line);
 }
 .nav { display: flex; align-items: center; justify-content: space-between; height: 78px; }
-.brand { display: flex; align-items: baseline; gap: 10px; }
+.brand { display: flex; align-items: center; gap: 11px; }
+.brand-logo { height: 46px; width: auto; display: block; flex: none; }
 .brand .mark {
   font-family: var(--font-display); font-weight: 700; font-size: 1.6rem;
   color: var(--gold-hi); letter-spacing: .02em; line-height: 1;
@@ -311,6 +312,7 @@ body.menu-open .scrim { opacity: 1; visibility: visible; }
 .footer { background: #0e0a06; border-top: 1px solid var(--line); padding: 70px 0 130px; position: relative; z-index: 2; }
 .footer-top { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 40px; }
 .footer .brand .mark { font-size: 1.4rem; }
+.footer .brand-logo { height: 54px; }
 .footer p.desc { color: var(--paper-soft); font-size: .9rem; margin-top: 18px; max-width: 36ch; }
 .footer h5 { font-size: .76rem; letter-spacing: .2em; text-transform: uppercase; color: var(--gold); margin-bottom: 16px; }
 .footer .fl a, .footer .fl li { display: block; color: var(--paper-dim); font-size: .9rem; padding: 6px 0; }
