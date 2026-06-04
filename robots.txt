@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# 67 마사지 (YH LAB)
+Sitemap: https://www.67massage.co.kr/sitemap.xml
