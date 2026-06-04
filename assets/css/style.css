@@ -316,6 +316,26 @@ body.menu-open .scrim { opacity: 1; visibility: visible; }
 .footer .biz b { color: var(--paper-dim); font-weight: 500; }
 
 /* =========================================================================
+   REVIEWS  (실제 후기만 — assets/js/reviews.js 데이터로 렌더)
+   ========================================================================= */
+.review-list { display: grid; gap: 16px; margin-top: 26px; }
+.review-card {
+  background: linear-gradient(160deg, var(--ink-2), var(--ink));
+  border: 1px solid var(--line); border-radius: 14px; padding: 22px 24px;
+}
+.review-card .stars { color: var(--gold-hi); letter-spacing: 3px; font-size: .95rem; }
+.review-card blockquote {
+  font-family: var(--font-display); font-size: 1.08rem; line-height: 1.75;
+  margin: 10px 0 14px; color: var(--paper);
+}
+.review-card .meta { color: var(--paper-soft); font-size: .85rem; }
+.review-empty {
+  margin-top: 24px; background: var(--ink-2); border: 1px dashed var(--line);
+  border-radius: 14px; padding: 26px 24px; color: var(--paper-soft);
+}
+.review-actions { margin-top: 28px; display: flex; gap: 12px; flex-wrap: wrap; }
+
+/* =========================================================================
    FLOATING CALL BUTTON  (mobile, bottom-right, animated, high visibility)
    ========================================================================= */
 .fab-call {

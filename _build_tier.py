@@ -105,6 +105,7 @@ def footer(root):
 <a class="fab-call" href="tel:0508-202-4717" aria-label="전화로 예약하기 0508-202-4717">
   <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.3 1l-2.2 2.2z"/></svg>
 </a>
+<script src="{root}assets/js/reviews.js"></script>
 <script src="{root}assets/js/main.js"></script>
 """
 
@@ -201,6 +202,8 @@ def faq_block(faqs):
 def build_parent(slug, d):
     root="../"
     name=d["name"]
+    from urllib.parse import quote
+    sms = "?body=" + quote(f"[67 마사지 {name} 후기] 지역/동네: , 코스(예 60분 아로마): , 별점(1~5): , 내용: ")
     H = head(slug, name, d["faqs"])
     body = f"""{header(root)}
 <section class="page-hero"><div class="wrap">
@@ -247,17 +250,18 @@ def build_parent(slug, d):
   {faq_block(d['faqs'])}
 </div></section>
 
-<section class="section areas-band" id="reviews"><div class="wrap" style="max-width:780px">
+<section class="section areas-band" id="reviews" data-area="{slug}" data-name="67 마사지 · {name} 출장마사지"><div class="wrap" style="max-width:780px">
   <span class="eyebrow">REVIEW</span>
   <h2 class="section-title">{name} 실제 이용 후기</h2>
-  <p class="lead" style="margin-top:16px">{name} 지역에서 받은 <strong style="color:var(--gold-hi)">실제 이용 후기</strong>를 이곳에 모읍니다. 후기는 이용 고객의 동의를 받아, 과장 없이 있는 그대로 게재합니다.</p>
-  <div class="callout" style="margin-top:24px;background:var(--ink-2);border:1px dashed var(--line);border-radius:14px;padding:26px 24px;color:var(--paper-soft)">
-    아직 등록된 후기가 없습니다. {name}에서 관리를 받으신 뒤 후기를 남겨주시면, 다음 이용자에게 가장 정확한 정보가 됩니다.
+  <p class="lead" style="margin-top:16px">{name}에서 받은 <strong style="color:var(--gold-hi)">실제 이용 후기</strong>만 게재합니다. 모든 후기는 이용 고객의 게재 동의를 받아 과장·왜곡 없이 그대로 싣습니다.</p>
+  <div data-review-list class="review-list"></div>
+  <div data-review-empty class="review-empty">
+    아직 등록된 후기가 없습니다. {name}에서 관리를 받으신 뒤 후기를 남겨주시면, 다음 이용자에게 가장 정확한 정보가 됩니다. (게재 동의하신 후기만 노출됩니다.)
   </div>
-  <!-- 실제 후기가 모이면 아래 형식으로 추가하고, Review/AggregateRating 구조화 데이터를 함께 넣으세요.
-  <figure class="review"><blockquote>실제 후기 내용</blockquote><figcaption>— ○○동, 60분 아로마 릴랙스</figcaption></figure>
-  -->
-  <p style="margin-top:30px"><a class="btn btn-gold" href="tel:0508-202-4717">{name} 지금 예약 0508-202-4717</a></p>
+  <div class="review-actions">
+    <a class="btn btn-gold" href="sms:0508-202-4717{sms}">{name} 후기 남기기</a>
+    <a class="btn btn-ghost" href="tel:0508-202-4717">{name} 예약 0508-202-4717</a>
+  </div>
 </div></section>
 
 {footer(root)}
