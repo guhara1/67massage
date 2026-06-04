@@ -46,7 +46,23 @@ window.REVIEWS = {
       consent: true
     }
   ],
-  suji:    []
+  suji:    [],
+  // ── 세부 지역(동/역) — 실제 후기를 받으면 해당 키 배열에 추가하세요 ──
+  "suwon-station": [],
+  "ingyedong":     [],
+  "yeongtong":     [],
+  "singal":        [],
+  "dongbaek":      [],
+  "cheoingu":      [],
+  "jeongja":       [],
+  "seohyeon":      [],
+  "sunae":         [],
+  "migeum":        [],
+  "byeongjeom":    [],
+  "hyangnam":      [],
+  "osan-station":  [],
+  "gweoldong":     [],
+  "segyo":         []
 };
 
 (function () {

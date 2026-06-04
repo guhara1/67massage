@@ -8,7 +8,7 @@
 재실행 시 _build_tier.py(부모/리다이렉트) 다음에 실행한다. 사이트맵을 최종적으로 다시 쓴다.
 """
 import json, os
-from _build_tier import header, footer, DOMAIN, TODAY, PARENTS
+from _build_tier import header, footer, DOMAIN, TODAY, PARENTS, PRICE
 
 BASE = os.path.dirname(os.path.abspath(__file__))
 ROOT = "../"
@@ -414,6 +414,26 @@ def head(slug, d):
 <body>
 """
 
+def review_sms(name):
+    from urllib.parse import quote
+    return "sms:0508-202-4717?body=" + quote(f"[67 마사지 {name} 후기] 지역/동네: , 코스(예 60분 아로마): , 별점(1~5): , 내용: ")
+
+def review_block(slug, name):
+    rsms = review_sms(name)
+    return f"""<section class="section areas-band" id="reviews" data-area="{slug}" data-name="67 마사지 · {name} 출장마사지"><div class="wrap" style="max-width:780px">
+  <span class="eyebrow">REVIEW</span>
+  <h2 class="section-title">{name} 실제 이용 후기</h2>
+  <p class="lead" style="margin-top:16px">{name}에서 받은 <strong style="color:var(--gold-hi)">실제 이용 후기</strong>만 게재합니다. 모든 후기는 이용 고객의 게재 동의를 받아 과장·왜곡 없이 그대로 싣습니다.</p>
+  <div data-review-list class="review-list"></div>
+  <div data-review-empty class="review-empty">
+    아직 등록된 후기가 없습니다. {name}에서 관리를 받으신 뒤 후기를 남겨주시면, 다음 이용자에게 가장 정확한 정보가 됩니다. (게재 동의하신 후기만 노출됩니다.)
+  </div>
+  <div class="review-actions">
+    <a class="btn btn-gold" href="{rsms}">{name} 후기 남기기</a>
+    <a class="btn btn-ghost" href="{PHONE}">{name} 예약 0508-202-4717</a>
+  </div>
+</div></section>"""
+
 H3S = "font-family:var(--font-display);font-size:1.12rem;margin:26px 0 8px;color:var(--paper)"
 H2S = ""
 
@@ -488,11 +508,14 @@ def build_local(slug, d):
   </div>
 </div></section>
 
-<section class="section areas-band" style="padding-top:34px"><div class="wrap" style="max-width:780px">
+{PRICE}
+<section class="section" style="padding-top:34px"><div class="wrap" style="max-width:780px">
   <span class="eyebrow">FAQ</span>
-  <h2 class="section-title">자주 묻는 질문</h2>
+  <h2 class="section-title">{name} 자주 묻는 질문</h2>
   <dl class="faq" style="margin-top:24px">{faqs}</dl>
 </div></section>
+
+{review_block(slug, name)}
 
 {footer(ROOT)}
 </body></html>
