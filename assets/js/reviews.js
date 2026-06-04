@@ -62,7 +62,13 @@ window.REVIEWS = {
   "hyangnam":      [],
   "osan-station":  [],
   "gweoldong":     [],
-  "segyo":         []
+  "segyo":         [],
+  // ── 서비스 코스별 후기 ──
+  "svc-swedish": [],
+  "svc-aroma": [],
+  "svc-deep": [],
+  "svc-sports": [],
+  "svc-couple": []
 };
 
 (function () {

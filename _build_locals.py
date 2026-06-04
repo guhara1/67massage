@@ -532,6 +532,7 @@ def write_sitemap():
            "suwon-guide","swedish-vs-aroma","yongin-guide"]
     for m in mag: pages.append((f"/magazine/{m}.html","monthly","0.6"))
     for p in PARENTS: pages.append((f"/areas/{p}.html","monthly","0.8"))
+    for sv in ["swedish","aroma","deep","sports","couple"]: pages.append((f"/services/{sv}.html","monthly","0.8"))
     for s in LOCALS: pages.append((f"/areas/{s}.html","monthly","0.7"))
     rows=[]
     for loc,cf,pr in pages:
