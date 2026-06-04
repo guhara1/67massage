@@ -1,0 +1,36 @@
+name: GA4 일일 리포트 → 텔레그램
+
+# 매일 한국시간 09:00(UTC 00:00)에 어제 GA4 요약을 텔레그램으로 발송
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch: {}   # 수동 실행(테스트)용 버튼
+
+permissions:
+  contents: read
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: 의존성 설치
+        run: pip install --quiet google-analytics-data
+
+      - name: 서비스계정 키 파일 생성
+        run: printf '%s' "$GA_SERVICE_ACCOUNT_JSON" > "$RUNNER_TEMP/ga.json"
+        env:
+          GA_SERVICE_ACCOUNT_JSON: ${{ secrets.GA_SERVICE_ACCOUNT_JSON }}
+
+      - name: 리포트 발송
+        env:
+          GOOGLE_APPLICATION_CREDENTIALS: ${{ runner.temp }}/ga.json
+          GA4_PROPERTY_ID: ${{ secrets.GA4_PROPERTY_ID }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python3 _ga4_report.py
