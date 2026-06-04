@@ -26,8 +26,11 @@ Allow: /
 User-agent: Daumoa
 Allow: /
 
-# 사이트맵 (구글·네이버 공통 제출)
+# 사이트맵 — 네이버 제출용
 Sitemap: https://67massage.xyz/sitemap.xml
+
+# 사이트맵 — 구글 제출용
+Sitemap: https://67massage.xyz/sitemap1.xml
 
 # RSS 피드 (매거진 신규 글 빠른 발견)
 Sitemap: https://67massage.xyz/feed.xml

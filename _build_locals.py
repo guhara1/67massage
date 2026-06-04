@@ -542,7 +542,8 @@ def write_sitemap():
     for loc,cf,pr in pages:
         rows.append(f"  <url>\n    <loc>{DOMAIN}{loc}</loc>\n    <lastmod>{TODAY}</lastmod>\n    <changefreq>{cf}</changefreq>\n    <priority>{pr}</priority>\n  </url>")
     xml = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "\n".join(rows) + "\n</urlset>\n"
-    open(os.path.join(BASE,"sitemap.xml"),"w",encoding="utf-8").write(xml)
+    open(os.path.join(BASE,"sitemap.xml"),"w",encoding="utf-8").write(xml)   # 네이버 제출용
+    open(os.path.join(BASE,"sitemap1.xml"),"w",encoding="utf-8").write(xml)  # 구글 제출용(동일 내용)
     return len(pages)
 
 def main():
