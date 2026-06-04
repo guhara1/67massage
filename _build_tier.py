@@ -41,11 +41,15 @@ def header(root):
           <a href="{root}services.html#couple">커플·2인 <span>동시 출장마사지</span></a>
         </div></li>
       <li><a href="{root}areas.html">출장지역 <i class="caret"></i></a>
-        <div class="dropdown wide grid">
-          <a href="{root}areas/suwon.html">수원</a><a href="{root}areas/dongtan.html">동탄</a>
-          <a href="{root}areas/yongin.html">용인</a><a href="{root}areas/bundang.html">분당</a>
-          <a href="{root}areas/osan.html">오산</a><a href="{root}areas/giheung.html">기흥</a>
-          <a href="{root}areas/suji.html">수지</a><a href="{root}areas.html">전체 지역 보기</a>
+        <div class="dropdown mega">
+          <a class="mega-all" href="{root}areas.html">전체 지역 보기 →</a>
+          <div class="mega-cols">
+            <div class="mega-col"><a class="mega-head" href="{root}areas/suwon.html">수원 출장마사지</a><a href="{root}areas/suwon.html#suwon-station">수원역</a><a href="{root}areas/suwon.html#ingyedong">인계동</a><a href="{root}areas/suwon.html#yeongtong">영통</a><a href="{root}areas/suwon.html">권선·장안·팔달·영통구</a></div>
+            <div class="mega-col"><a class="mega-head" href="{root}areas/yongin.html">용인 출장마사지</a><a href="{root}areas/suji.html">수지</a><a href="{root}areas/giheung.html">기흥</a><a href="{root}areas/giheung.html#singal">신갈</a><a href="{root}areas/giheung.html#dongbaek">동백</a><a href="{root}areas/yongin.html#cheoingu">처인구</a></div>
+            <div class="mega-col"><a class="mega-head" href="{root}areas/bundang.html">성남·분당 출장마사지</a><a href="{root}areas/bundang.html">분당</a><a href="{root}areas/bundang.html#jeongja">정자역</a><a href="{root}areas/bundang.html#seohyeon">서현역</a><a href="{root}areas/bundang.html#sunae">수내역</a><a href="{root}areas/bundang.html#migeum">미금역</a></div>
+            <div class="mega-col"><a class="mega-head" href="{root}areas/dongtan.html">화성·동탄 출장마사지</a><a href="{root}areas/dongtan.html">동탄</a><a href="{root}areas/dongtan.html#byeongjeom">병점</a><a href="{root}areas/dongtan.html#hyangnam">향남</a></div>
+            <div class="mega-col"><a class="mega-head" href="{root}areas/osan.html">오산 출장마사지</a><a href="{root}areas/osan.html#osan-station">오산역</a><a href="{root}areas/osan.html#gweoldong">궐동</a><a href="{root}areas/osan.html#segyo">세교</a></div>
+          </div>
         </div></li>
       <li><a href="{root}magazine/index.html">매거진 <i class="caret"></i></a>
         <div class="dropdown">
@@ -69,10 +73,17 @@ def header(root):
     <a href="{root}services.html#deep">딥티슈</a><a href="{root}services.html#sports">스포츠 회복</a>
     <a href="{root}services.html#couple">커플·2인</a></div></details>
   <details><summary>출장지역 <i class="caret"></i></summary><div class="sub-links">
-    <a href="{root}areas/suwon.html">수원</a><a href="{root}areas/dongtan.html">동탄</a>
-    <a href="{root}areas/yongin.html">용인</a><a href="{root}areas/bundang.html">분당</a>
-    <a href="{root}areas/osan.html">오산</a><a href="{root}areas/giheung.html">기흥</a>
-    <a href="{root}areas/suji.html">수지</a><a href="{root}areas.html">전체 지역 보기</a></div></details>
+    <a href="{root}areas.html">전체 지역 보기</a>
+    <a class="reg" href="{root}areas/suwon.html">수원 출장마사지</a>
+    <a href="{root}areas/suwon.html#suwon-station">· 수원역</a><a href="{root}areas/suwon.html#ingyedong">· 인계동</a><a href="{root}areas/suwon.html#yeongtong">· 영통</a><a href="{root}areas/suwon.html">· 권선·장안·팔달·영통구</a>
+    <a class="reg" href="{root}areas/yongin.html">용인 출장마사지</a>
+    <a href="{root}areas/suji.html">· 수지</a><a href="{root}areas/giheung.html">· 기흥</a><a href="{root}areas/giheung.html#singal">· 신갈</a><a href="{root}areas/giheung.html#dongbaek">· 동백</a><a href="{root}areas/yongin.html#cheoingu">· 처인구</a>
+    <a class="reg" href="{root}areas/bundang.html">성남·분당 출장마사지</a>
+    <a href="{root}areas/bundang.html">· 분당</a><a href="{root}areas/bundang.html#jeongja">· 정자역</a><a href="{root}areas/bundang.html#seohyeon">· 서현역</a><a href="{root}areas/bundang.html#sunae">· 수내역</a><a href="{root}areas/bundang.html#migeum">· 미금역</a>
+    <a class="reg" href="{root}areas/dongtan.html">화성·동탄 출장마사지</a>
+    <a href="{root}areas/dongtan.html">· 동탄</a><a href="{root}areas/dongtan.html#byeongjeom">· 병점</a><a href="{root}areas/dongtan.html#hyangnam">· 향남</a>
+    <a class="reg" href="{root}areas/osan.html">오산 출장마사지</a>
+    <a href="{root}areas/osan.html#osan-station">· 오산역</a><a href="{root}areas/osan.html#gweoldong">· 궐동</a><a href="{root}areas/osan.html#segyo">· 세교</a></div></details>
   <details><summary>매거진 <i class="caret"></i></summary><div class="sub-links">
     <a href="{root}magazine/index.html#guide">마사지 가이드</a><a href="{root}magazine/index.html#health">효능·건강</a>
     <a href="{root}magazine/index.html#local">지역 가이드</a><a href="{root}magazine/index.html#selfcare">셀프케어</a>
@@ -332,6 +343,8 @@ PARENTS = {
     ("","동탄역·메타폴리스","SRT 동탄역과 메타폴리스 상업지구 일대입니다. 역세권 오피스텔과 출장객 숙소 방문이 잦고, 야간 도착 예약이 많습니다."),
     ("","동탄1신도시","반석산·센트럴파크 인근의 초기 조성 주거지입니다. 가족 단위 거주가 많아 저녁 시간대 예약이 고르게 분포합니다."),
     ("","동탄2신도시·호수공원","동탄호수공원을 중심으로 계속 확장 중인 신축 단지 지역입니다. 단지명과 동 번호 체계가 복잡한 곳이 있어 위치를 함께 주시면 좋습니다."),
+    ("byeongjeom","병점","동탄과 맞닿은 화성·수원 경계의 역세권 주거지입니다. 병점역 인근 아파트·빌라가 밀집해 퇴근 후 자택에서 받는 저녁 예약이 고르며, 동탄 권역과 같은 정찰가로 방문합니다."),
+    ("hyangnam","향남","화성 남부 향남읍의 택지지구와 제약·산업단지가 함께 있는 지역입니다. 교대 근무자의 야간 예약과 신축 단지 가족 단위 이용이 많아, 단지명·동과 출입 방법을 함께 주시면 도착이 정확합니다."),
   ],
   parking="동탄2신도시는 단지가 넓고 동 번호 체계가 복잡한 곳이 있어, 예약 시 단지명과 동·출입구를 함께 알려주시면 도착이 더 정확합니다. 동탄역 SRT 이용 출장객의 인근 숙소 방문도 가능합니다.",
   usage="맞벌이·교대 근무로 수면이 부족한 분이 많아 수면·피로 회복용 아로마 릴랙스·무드 오일 케어 90분이 인기입니다. 운동 인구가 많아 컨디셔닝을 겸한 프리미엄 전신 120분도 자주 선택됩니다. 부부가 함께 받고 싶으면 예약 시 인원을 미리 알려주시면 동시 배정으로 안내합니다.",
@@ -385,8 +398,8 @@ PARENTS = {
   intro2="67 마사지는 오산 전역을 단일 정찰 권역으로 운영합니다. 교대·야간 근무자가 많은 산업단지 특성상 늦은 시간 예약 응대에 익숙합니다.",
   cov_intro="오산은 신도시·산업단지·대학가가 섞여 동네별 이용 성격이 다릅니다.",
   coverage=[
-    ("","세교신도시","계속 확장 중인 신축 주거지입니다. 가족 단위 거주가 많아 저녁 예약이 고르며, 단지명과 동을 함께 주시면 도착이 정확합니다."),
-    ("","운암지구·오산역","오산역 인근 주거·상권 지역입니다. 역세권 숙소 방문과 직장인 이용이 많습니다."),
+    ("segyo","세교신도시","계속 확장 중인 신축 주거지입니다. 가족 단위 거주가 많아 저녁 예약이 고르며, 단지명과 동을 함께 주시면 도착이 정확합니다."),
+    ("osan-station","운암지구·오산역","오산역 인근 주거·상권 지역입니다. 역세권 숙소 방문과 직장인 이용이 많습니다."),
     ("gweoldong","궐동","오산대 인근 대학가·원룸 밀집지입니다. 1인 가구의 간편한 60분 코스 예약이 많고, 비슷한 원룸 건물이 많아 건물명·호수와 공동현관 출입 방법을 함께 주시면 도착이 빠릅니다."),
   ],
   parking="세교신도시 신축 단지는 단지명과 동을, 산업단지·기숙사는 출입 절차를 함께 주시면 도착이 정확합니다. 궐동 원룸가는 야간 유동인구가 많아 출발 시 예정 시간을 안내드립니다.",
