@@ -429,3 +429,8 @@ body.menu-open .scrim { opacity: 1; visibility: visible; }
 @media (min-width: 761px) {
   .fab-call, .fab-label { /* keep on desktop too but smaller emphasis */ }
 }
+
+/* 매거진 관련 글 링크 */
+.article .body ul.related { margin: 8px 0 4px; }
+.article .body ul.related li { margin: 4px 0; }
+.article .body ul.related a { color: var(--gold-hi); text-decoration: underline; text-underline-offset: 3px; }
