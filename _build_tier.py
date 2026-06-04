@@ -13,15 +13,11 @@ DOMAIN = "https://67massage.xyz"
 TODAY = "2026-06-04"
 BASE = os.path.dirname(os.path.abspath(__file__))
 
-# 하위동네 → (상위slug, 앵커, 라벨)
+# 하위동네 → (상위slug, 앵커, 라벨)  ※ 개별 풀페이지로 전환된 동네는 _build_locals.py가 담당
+# 여기 남은 항목만 상위 앵커로 통합되는 noindex 리다이렉트로 유지한다.
 CHILD = {
- "yeongtong":("suwon","yeongtong","영통"), "suwon-station":("suwon","suwon-station","수원역"),
- "ingyedong":("suwon","ingyedong","인계동"), "guundong":("suwon","guundong","구운동"),
- "migeum":("bundang","migeum","미금역"), "sunae":("bundang","sunae","수내역"),
- "jeongja":("bundang","jeongja","정자역"), "seohyeon":("bundang","seohyeon","서현역"),
- "singal":("giheung","singal","신갈"), "dongbaek":("giheung","dongbaek","동백"),
- "cheoingu":("yongin","cheoingu","처인구"), "pogok":("yongin","pogok","포곡"),
- "gweoldong":("osan","gweoldong","궐동"),
+ "guundong":("suwon","guundong","구운동"),
+ "pogok":("yongin","pogok","포곡"),
 }
 
 # ---- 공통 조각 ----
@@ -44,11 +40,11 @@ def header(root):
         <div class="dropdown mega">
           <a class="mega-all" href="{root}areas.html">전체 지역 보기 →</a>
           <div class="mega-cols">
-            <div class="mega-col"><a class="mega-head" href="{root}areas/suwon.html">수원 출장마사지</a><a href="{root}areas/suwon.html#suwon-station">수원역</a><a href="{root}areas/suwon.html#ingyedong">인계동</a><a href="{root}areas/suwon.html#yeongtong">영통</a><a href="{root}areas/suwon.html">권선·장안·팔달·영통</a></div>
-            <div class="mega-col"><a class="mega-head" href="{root}areas/yongin.html">용인 출장마사지</a><a href="{root}areas/suji.html">수지</a><a href="{root}areas/giheung.html">기흥</a><a href="{root}areas/giheung.html#singal">신갈</a><a href="{root}areas/giheung.html#dongbaek">동백</a><a href="{root}areas/yongin.html#cheoingu">처인구</a></div>
-            <div class="mega-col"><a class="mega-head" href="{root}areas/bundang.html">성남·분당 출장마사지</a><a href="{root}areas/bundang.html">분당</a><a href="{root}areas/bundang.html#jeongja">정자역</a><a href="{root}areas/bundang.html#seohyeon">서현역</a><a href="{root}areas/bundang.html#sunae">수내역</a><a href="{root}areas/bundang.html#migeum">미금역</a></div>
-            <div class="mega-col"><a class="mega-head" href="{root}areas/dongtan.html">화성·동탄 출장마사지</a><a href="{root}areas/dongtan.html">동탄</a><a href="{root}areas/dongtan.html#byeongjeom">병점</a><a href="{root}areas/dongtan.html#hyangnam">향남</a></div>
-            <div class="mega-col"><a class="mega-head" href="{root}areas/osan.html">오산 출장마사지</a><a href="{root}areas/osan.html#osan-station">오산역</a><a href="{root}areas/osan.html#gweoldong">궐동</a><a href="{root}areas/osan.html#segyo">세교</a></div>
+            <div class="mega-col"><a class="mega-head" href="{root}areas/suwon.html">수원 출장마사지</a><a href="{root}areas/suwon-station.html">수원역</a><a href="{root}areas/ingyedong.html">인계동</a><a href="{root}areas/yeongtong.html">영통</a><a href="{root}areas/suwon.html">권선·장안·팔달·영통</a></div>
+            <div class="mega-col"><a class="mega-head" href="{root}areas/yongin.html">용인 출장마사지</a><a href="{root}areas/suji.html">수지</a><a href="{root}areas/giheung.html">기흥</a><a href="{root}areas/singal.html">신갈</a><a href="{root}areas/dongbaek.html">동백</a><a href="{root}areas/cheoingu.html">처인구</a></div>
+            <div class="mega-col"><a class="mega-head" href="{root}areas/bundang.html">성남·분당 출장마사지</a><a href="{root}areas/bundang.html">분당</a><a href="{root}areas/jeongja.html">정자역</a><a href="{root}areas/seohyeon.html">서현역</a><a href="{root}areas/sunae.html">수내역</a><a href="{root}areas/migeum.html">미금역</a></div>
+            <div class="mega-col"><a class="mega-head" href="{root}areas/dongtan.html">화성·동탄 출장마사지</a><a href="{root}areas/dongtan.html">동탄</a><a href="{root}areas/byeongjeom.html">병점</a><a href="{root}areas/hyangnam.html">향남</a></div>
+            <div class="mega-col"><a class="mega-head" href="{root}areas/osan.html">오산 출장마사지</a><a href="{root}areas/osan-station.html">오산역</a><a href="{root}areas/gweoldong.html">궐동</a><a href="{root}areas/segyo.html">세교</a></div>
           </div>
         </div></li>
       <li><a href="{root}magazine/index.html">매거진 <i class="caret"></i></a>
@@ -75,15 +71,15 @@ def header(root):
   <details><summary>출장지역 <i class="caret"></i></summary><div class="sub-links">
     <a href="{root}areas.html">전체 지역 보기</a>
     <a class="reg" href="{root}areas/suwon.html">수원 출장마사지</a>
-    <a href="{root}areas/suwon.html#suwon-station">· 수원역</a><a href="{root}areas/suwon.html#ingyedong">· 인계동</a><a href="{root}areas/suwon.html#yeongtong">· 영통</a><a href="{root}areas/suwon.html">· 권선·장안·팔달·영통</a>
+    <a href="{root}areas/suwon-station.html">· 수원역</a><a href="{root}areas/ingyedong.html">· 인계동</a><a href="{root}areas/yeongtong.html">· 영통</a><a href="{root}areas/suwon.html">· 권선·장안·팔달·영통</a>
     <a class="reg" href="{root}areas/yongin.html">용인 출장마사지</a>
-    <a href="{root}areas/suji.html">· 수지</a><a href="{root}areas/giheung.html">· 기흥</a><a href="{root}areas/giheung.html#singal">· 신갈</a><a href="{root}areas/giheung.html#dongbaek">· 동백</a><a href="{root}areas/yongin.html#cheoingu">· 처인구</a>
+    <a href="{root}areas/suji.html">· 수지</a><a href="{root}areas/giheung.html">· 기흥</a><a href="{root}areas/singal.html">· 신갈</a><a href="{root}areas/dongbaek.html">· 동백</a><a href="{root}areas/cheoingu.html">· 처인구</a>
     <a class="reg" href="{root}areas/bundang.html">성남·분당 출장마사지</a>
-    <a href="{root}areas/bundang.html">· 분당</a><a href="{root}areas/bundang.html#jeongja">· 정자역</a><a href="{root}areas/bundang.html#seohyeon">· 서현역</a><a href="{root}areas/bundang.html#sunae">· 수내역</a><a href="{root}areas/bundang.html#migeum">· 미금역</a>
+    <a href="{root}areas/bundang.html">· 분당</a><a href="{root}areas/jeongja.html">· 정자역</a><a href="{root}areas/seohyeon.html">· 서현역</a><a href="{root}areas/sunae.html">· 수내역</a><a href="{root}areas/migeum.html">· 미금역</a>
     <a class="reg" href="{root}areas/dongtan.html">화성·동탄 출장마사지</a>
-    <a href="{root}areas/dongtan.html">· 동탄</a><a href="{root}areas/dongtan.html#byeongjeom">· 병점</a><a href="{root}areas/dongtan.html#hyangnam">· 향남</a>
+    <a href="{root}areas/dongtan.html">· 동탄</a><a href="{root}areas/byeongjeom.html">· 병점</a><a href="{root}areas/hyangnam.html">· 향남</a>
     <a class="reg" href="{root}areas/osan.html">오산 출장마사지</a>
-    <a href="{root}areas/osan.html#osan-station">· 오산역</a><a href="{root}areas/osan.html#gweoldong">· 궐동</a><a href="{root}areas/osan.html#segyo">· 세교</a></div></details>
+    <a href="{root}areas/osan-station.html">· 오산역</a><a href="{root}areas/gweoldong.html">· 궐동</a><a href="{root}areas/segyo.html">· 세교</a></div></details>
   <details><summary>매거진 <i class="caret"></i></summary><div class="sub-links">
     <a href="{root}magazine/index.html#guide">마사지 가이드</a><a href="{root}magazine/index.html#health">효능·건강</a>
     <a href="{root}magazine/index.html#local">지역 가이드</a><a href="{root}magazine/index.html#selfcare">셀프케어</a>
