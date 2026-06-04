@@ -35,3 +35,21 @@
   var y = document.querySelector("[data-year]");
   if (y) y.textContent = new Date().getFullYear();
 })();
+
+/* GA4 전환 추적 — 전화(tel:)·문자(sms:) 클릭을 이벤트로 전송
+   GA4에서 'phone_call'을 '키 이벤트(전환)'로 표시하면 예약 문의 전환을 측정할 수 있습니다. */
+(function () {
+  if (typeof window.gtag !== "function") return;
+  document.addEventListener("click", function (e) {
+    var a = e.target && e.target.closest ? e.target.closest('a[href^="tel:"],a[href^="sms:"]') : null;
+    if (!a) return;
+    var href = a.getAttribute("href") || "";
+    var isTel = href.indexOf("tel:") === 0;
+    gtag("event", isTel ? "phone_call" : "sms_click", {
+      event_category: "contact",
+      event_label: location.pathname + location.hash,
+      link_url: href,
+      transport_type: "beacon"
+    });
+  }, true);
+})();
