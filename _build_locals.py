@@ -526,6 +526,7 @@ def build_local(slug, d):
 def write_sitemap():
     pages = [("/","daily","1.0"),("/services.html","monthly","0.9"),("/areas.html","weekly","0.9"),
              ("/about.html","monthly","0.7"),("/guide.html","monthly","0.7"),
+             ("/privacy.html","yearly","0.2"),("/terms.html","yearly","0.2"),
              ("/magazine/index.html","weekly","0.8")]
     mag = ["desk-neck-care","dongtan-guide","first-time-outcall","flat-rate-policy","foam-rolling-basics",
            "hygiene-checklist","lower-back-deeptissue","massage-duration","night-stretch-5min","sleep-recovery",

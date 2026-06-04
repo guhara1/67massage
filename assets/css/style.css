@@ -320,7 +320,10 @@ body.menu-open .scrim { opacity: 1; visibility: visible; }
    FOOTER
    ========================================================================= */
 .footer { background: #0e0a06; border-top: 1px solid var(--line); padding: 70px 0 130px; position: relative; z-index: 2; }
-.footer-top { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 40px; }
+.footer-top { display: grid; grid-template-columns: 1.6fr 1fr 1.1fr 1fr; gap: 40px; }
+.footer .foot-contact { margin-top: 18px; display: flex; flex-direction: column; gap: 2px; }
+.footer .foot-tel { font-family: var(--font-display); font-size: 1.25rem; color: var(--gold-hi); letter-spacing: .02em; }
+.footer .foot-contact span { font-size: .78rem; color: var(--paper-soft); letter-spacing: .03em; }
 .footer .brand .mark { font-size: 1.4rem; }
 .footer .brand-logo { height: 54px; }
 .footer p.desc { color: var(--paper-soft); font-size: .9rem; margin-top: 18px; max-width: 36ch; }
