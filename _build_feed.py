@@ -3,7 +3,7 @@
 import re, glob, os
 from datetime import datetime
 
-DOMAIN = "https://67massage.xyz"
+DOMAIN = "https://67massage.netlify.app"
 BASE = os.path.dirname(os.path.abspath(__file__))
 WD = ["Mon","Tue","Wed","Thu","Fri","Sat","Sun"]
 MO = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]
