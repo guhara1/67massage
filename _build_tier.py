@@ -9,7 +9,7 @@
 """
 import json, os, datetime
 
-DOMAIN = "https://67massage.xyz"
+DOMAIN = "https://67massage.netlify.app"
 TODAY = "2026-06-04"
 BASE = os.path.dirname(os.path.abspath(__file__))
 
@@ -114,7 +114,7 @@ def footer(root):
     <b>주소</b> 경기도 파주시 청석로 268 &nbsp;|&nbsp; <b>대표전화</b> <a href="tel:0508-202-4717" style="color:var(--gold-hi)">0508-202-4717</a> &nbsp;|&nbsp; <b>운영시간</b> 24시간 연중무휴<br>
     © <span data-year>2026</span> 67 마사지 (YH LAB). All rights reserved.
   </div>
-  <script type="application/ld+json">{{"@context":"https://schema.org","@type":"HealthAndBeautyBusiness","name":"67 마사지","legalName":"YH LAB","url":"https://67massage.xyz/","logo":"https://67massage.xyz/assets/images/logo-mark.png","image":"https://67massage.xyz/assets/og-cover.jpg","telephone":"+82-50-8202-4717","taxID":"815-26-00585","founder":{{"@type":"Person","name":"김유환"}},"address":{{"@type":"PostalAddress","addressCountry":"KR","addressRegion":"경기도","streetAddress":"파주시 청석로 268"}},"areaServed":[{{"@type":"City","name":"수원"}},{{"@type":"City","name":"용인"}},{{"@type":"City","name":"성남"}},{{"@type":"City","name":"화성"}},{{"@type":"City","name":"오산"}},{{"@type":"City","name":"기흥"}}],"openingHoursSpecification":{{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"00:00","closes":"23:59"}},"priceRange":"₩₩"}}</script>
+  <script type="application/ld+json">{{"@context":"https://schema.org","@type":"HealthAndBeautyBusiness","name":"67 마사지","legalName":"YH LAB","url":"https://67massage.netlify.app/","logo":"https://67massage.netlify.app/assets/images/logo-mark.png","image":"https://67massage.netlify.app/assets/og-cover.jpg","telephone":"+82-50-8202-4717","taxID":"815-26-00585","founder":{{"@type":"Person","name":"김유환"}},"address":{{"@type":"PostalAddress","addressCountry":"KR","addressRegion":"경기도","streetAddress":"파주시 청석로 268"}},"areaServed":[{{"@type":"City","name":"수원"}},{{"@type":"City","name":"용인"}},{{"@type":"City","name":"성남"}},{{"@type":"City","name":"화성"}},{{"@type":"City","name":"오산"}},{{"@type":"City","name":"기흥"}}],"openingHoursSpecification":{{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"00:00","closes":"23:59"}},"priceRange":"₩₩"}}</script>
 </div></footer>
 <span class="fab-label" aria-hidden="true">전화예약</span>
 <a class="fab-call" href="tel:0508-202-4717" aria-label="전화로 예약하기 0508-202-4717">

@@ -4,18 +4,18 @@ IndexNow 제출기 — 새 글/수정 글을 Bing·Naver·Yandex·Seznam 등에 
 
 준비물(이미 완료):
   - 루트에 키 파일: f0ceaaa66503df1016e69e607b75fbfd.txt  (내용=키)
-  - 배포된 사이트에서 https://67massage.xyz/f0ceaaa66503df1016e69e607b75fbfd.txt 가 200으로 열려야 함
+  - 배포된 사이트에서 https://67massage.netlify.app/f0ceaaa66503df1016e69e607b75fbfd.txt 가 200으로 열려야 함
 
 사용법:
   python3 _indexnow.py --changed     # 직전 커밋에서 바뀐 .html만 통보 (글 올릴 때마다 권장)
   python3 _indexnow.py --all         # sitemap.xml 전체 통보 (최초 1회/대규모 변경 시)
-  python3 _indexnow.py /areas/segyo.html https://67massage.xyz/magazine/sleep-recovery.html
+  python3 _indexnow.py /areas/segyo.html https://67massage.netlify.app/magazine/sleep-recovery.html
                                      # 특정 URL/경로만 통보
   python3 _indexnow.py --all --dry   # 전송 없이 대상 URL만 출력
 """
 import sys, json, subprocess, urllib.request, urllib.error, re, os
 
-HOST = "67massage.xyz"
+HOST = "67massage.netlify.app"
 KEY = "f0ceaaa66503df1016e69e607b75fbfd"
 KEY_LOCATION = f"https://{HOST}/{KEY}.txt"
 ENDPOINT = "https://api.indexnow.org/IndexNow"  # 공유 엔드포인트(참여 검색엔진에 전파)

@@ -2,99 +2,99 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
   <title>67 마사지 매거진</title>
-  <link>https://67massage.xyz/magazine/index.html</link>
-  <atom:link href="https://67massage.xyz/feed.xml" rel="self" type="application/rss+xml" />
+  <link>https://67massage.netlify.app/magazine/index.html</link>
+  <atom:link href="https://67massage.netlify.app/feed.xml" rel="self" type="application/rss+xml" />
   <description>마사지 선택법·회복 건강 정보·지역 이용 가이드·셀프케어 — 67 마사지 관리사가 현장 경험으로 정리한 매거진</description>
   <language>ko</language>
-  <lastBuildDate>Thu, 04 Jun 2026 09:00:00 +0900</lastBuildDate>
+  <lastBuildDate>Mon, 29 Jun 2026 09:00:00 +0900</lastBuildDate>
   <item>
     <title>스웨디시 vs 아로마, 나에게 맞는 관리 고르는 법</title>
-    <link>https://67massage.xyz/magazine/swedish-vs-aroma.html</link>
-    <guid isPermaLink="true">https://67massage.xyz/magazine/swedish-vs-aroma.html</guid>
+    <link>https://67massage.netlify.app/magazine/swedish-vs-aroma.html</link>
+    <guid isPermaLink="true">https://67massage.netlify.app/magazine/swedish-vs-aroma.html</guid>
     <description>이름은 익숙한데 막상 고르려면 헷갈리는 두 관리. 결정적 차이와 컨디션별 선택 기준을 현장 기준으로 정리했습니다.</description>
     <pubDate>Thu, 04 Jun 2026 09:00:00 +0900</pubDate>
   </item>
   <item>
     <title>하루 10시간 앉아 있는 사람을 위한 목·어깨 관리</title>
-    <link>https://67massage.xyz/magazine/desk-neck-care.html</link>
-    <guid isPermaLink="true">https://67massage.xyz/magazine/desk-neck-care.html</guid>
+    <link>https://67massage.netlify.app/magazine/desk-neck-care.html</link>
+    <guid isPermaLink="true">https://67massage.netlify.app/magazine/desk-neck-care.html</guid>
     <description>좌식 생활이 만드는 긴장의 메커니즘과, 출장마사지로 풀어내는 순서를 정리했습니다.</description>
     <pubDate>Thu, 28 May 2026 09:00:00 +0900</pubDate>
   </item>
   <item>
     <title>수원에서 출장마사지 부르기 전 알아둘 것</title>
-    <link>https://67massage.xyz/magazine/suwon-guide.html</link>
-    <guid isPermaLink="true">https://67massage.xyz/magazine/suwon-guide.html</guid>
+    <link>https://67massage.netlify.app/magazine/suwon-guide.html</link>
+    <guid isPermaLink="true">https://67massage.netlify.app/magazine/suwon-guide.html</guid>
     <description>수원 권역 이용 시간대·동선·자주 묻는 질문을 현장 기준으로 안내합니다.</description>
     <pubDate>Thu, 21 May 2026 09:00:00 +0900</pubDate>
   </item>
   <item>
     <title>동탄 신도시에서 출장마사지 이용하는 법</title>
-    <link>https://67massage.xyz/magazine/dongtan-guide.html</link>
-    <guid isPermaLink="true">https://67massage.xyz/magazine/dongtan-guide.html</guid>
+    <link>https://67massage.netlify.app/magazine/dongtan-guide.html</link>
+    <guid isPermaLink="true">https://67massage.netlify.app/magazine/dongtan-guide.html</guid>
     <description>1·2신도시로 나뉜 동탄, 단지·동선 특성에 맞춘 이용 안내.</description>
     <pubDate>Thu, 14 May 2026 09:00:00 +0900</pubDate>
   </item>
   <item>
     <title>용인(수지·기흥·처인)에서의 출장마사지 안내</title>
-    <link>https://67massage.xyz/magazine/yongin-guide.html</link>
-    <guid isPermaLink="true">https://67massage.xyz/magazine/yongin-guide.html</guid>
+    <link>https://67massage.netlify.app/magazine/yongin-guide.html</link>
+    <guid isPermaLink="true">https://67massage.netlify.app/magazine/yongin-guide.html</guid>
     <description>세 개 구로 넓게 펼쳐진 용인, 구별 특성과 도착 시간 안내.</description>
     <pubDate>Thu, 07 May 2026 09:00:00 +0900</pubDate>
   </item>
   <item>
     <title>60분·90분·120분, 시간은 어떻게 고를까</title>
-    <link>https://67massage.xyz/magazine/massage-duration.html</link>
-    <guid isPermaLink="true">https://67massage.xyz/magazine/massage-duration.html</guid>
+    <link>https://67massage.netlify.app/magazine/massage-duration.html</link>
+    <guid isPermaLink="true">https://67massage.netlify.app/magazine/massage-duration.html</guid>
     <description>‘일단 60분’이 항상 정답은 아닙니다. 목적과 부위 범위에 따라 적정 시간이 달라지는 이유를 설명합니다.</description>
     <pubDate>Thu, 30 Apr 2026 09:00:00 +0900</pubDate>
   </item>
   <item>
     <title>출장마사지 처음이라면 — 준비물·진행·매너 한눈에</title>
-    <link>https://67massage.xyz/magazine/first-time-outcall.html</link>
-    <guid isPermaLink="true">https://67massage.xyz/magazine/first-time-outcall.html</guid>
+    <link>https://67massage.netlify.app/magazine/first-time-outcall.html</link>
+    <guid isPermaLink="true">https://67massage.netlify.app/magazine/first-time-outcall.html</guid>
     <description>무엇을 준비해야 하는지, 어떻게 진행되는지 몰라 망설이는 분들을 위한 첫 이용 안내.</description>
     <pubDate>Thu, 23 Apr 2026 09:00:00 +0900</pubDate>
   </item>
   <item>
     <title>정찰제와 ‘추가금 없음’이 중요한 이유</title>
-    <link>https://67massage.xyz/magazine/flat-rate-policy.html</link>
-    <guid isPermaLink="true">https://67massage.xyz/magazine/flat-rate-policy.html</guid>
+    <link>https://67massage.netlify.app/magazine/flat-rate-policy.html</link>
+    <guid isPermaLink="true">https://67massage.netlify.app/magazine/flat-rate-policy.html</guid>
     <description>출장마사지에서 가격 투명성이 왜 신뢰의 출발점인지 이야기합니다.</description>
     <pubDate>Thu, 16 Apr 2026 09:00:00 +0900</pubDate>
   </item>
   <item>
     <title>앉아서 생기는 허리 뻐근함과 딥티슈 접근법</title>
-    <link>https://67massage.xyz/magazine/lower-back-deeptissue.html</link>
-    <guid isPermaLink="true">https://67massage.xyz/magazine/lower-back-deeptissue.html</guid>
+    <link>https://67massage.netlify.app/magazine/lower-back-deeptissue.html</link>
+    <guid isPermaLink="true">https://67massage.netlify.app/magazine/lower-back-deeptissue.html</guid>
     <description>허리 주변이 묵직할 때 무엇이 뭉친 것인지, 그리고 어떻게 접근하는지.</description>
     <pubDate>Thu, 09 Apr 2026 09:00:00 +0900</pubDate>
   </item>
   <item>
     <title>잠이 얕은 날, 마사지가 수면에 주는 영향</title>
-    <link>https://67massage.xyz/magazine/sleep-recovery.html</link>
-    <guid isPermaLink="true">https://67massage.xyz/magazine/sleep-recovery.html</guid>
+    <link>https://67massage.netlify.app/magazine/sleep-recovery.html</link>
+    <guid isPermaLink="true">https://67massage.netlify.app/magazine/sleep-recovery.html</guid>
     <description>이완 관리가 수면의 질과 어떻게 연결되는지, 그리고 효과를 높이는 방법.</description>
     <pubDate>Thu, 02 Apr 2026 09:00:00 +0900</pubDate>
   </item>
   <item>
     <title>출장마사지 위생, 이것만은 확인하세요</title>
-    <link>https://67massage.xyz/magazine/hygiene-checklist.html</link>
-    <guid isPermaLink="true">https://67massage.xyz/magazine/hygiene-checklist.html</guid>
+    <link>https://67massage.netlify.app/magazine/hygiene-checklist.html</link>
+    <guid isPermaLink="true">https://67massage.netlify.app/magazine/hygiene-checklist.html</guid>
     <description>안심하고 받기 위해 점검하면 좋은 위생 체크리스트.</description>
     <pubDate>Thu, 26 Mar 2026 09:00:00 +0900</pubDate>
   </item>
   <item>
     <title>폼롤러로 하는 셀프 근막 이완 기본기</title>
-    <link>https://67massage.xyz/magazine/foam-rolling-basics.html</link>
-    <guid isPermaLink="true">https://67massage.xyz/magazine/foam-rolling-basics.html</guid>
+    <link>https://67massage.netlify.app/magazine/foam-rolling-basics.html</link>
+    <guid isPermaLink="true">https://67massage.netlify.app/magazine/foam-rolling-basics.html</guid>
     <description>잘못 쓰면 오히려 멍만 드는 폼롤러, 제대로 쓰는 원칙을 정리했습니다.</description>
     <pubDate>Thu, 19 Mar 2026 09:00:00 +0900</pubDate>
   </item>
   <item>
     <title>자기 전 5분, 굳은 몸을 푸는 셀프 스트레칭</title>
-    <link>https://67massage.xyz/magazine/night-stretch-5min.html</link>
-    <guid isPermaLink="true">https://67massage.xyz/magazine/night-stretch-5min.html</guid>
+    <link>https://67massage.netlify.app/magazine/night-stretch-5min.html</link>
+    <guid isPermaLink="true">https://67massage.netlify.app/magazine/night-stretch-5min.html</guid>
     <description>관리 사이사이 컨디션을 유지하는 가장 쉬운 방법. 도구 없이 침대에서 할 수 있습니다.</description>
     <pubDate>Thu, 12 Mar 2026 09:00:00 +0900</pubDate>
   </item>

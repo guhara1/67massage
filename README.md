@@ -68,10 +68,10 @@
 
 1. **실제 도메인 교체**
    현재 모든 canonical·OG·sitemap·JSON-LD 의 도메인이
-   `https://67massage.xyz` 플레이스홀더로 들어가 있습니다.
+   `https://67massage.netlify.app` 플레이스홀더로 들어가 있습니다.
    실제 도메인이 다르면 전체 파일에서 일괄 치환하세요.
    ```bash
-   grep -rl "67massage.xyz" . | xargs sed -i 's#67massage.xyz#실제도메인#g'
+   grep -rl "67massage.netlify.app" . | xargs sed -i 's#67massage.netlify.app#실제도메인#g'
    ```
 
 2. **대표 이미지 교체**
