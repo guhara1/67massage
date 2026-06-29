@@ -100,7 +100,34 @@
       {"@type":"Offer","itemOffered":{"@type":"Service","name":"딥티슈 출장마사지"}},
       {"@type":"Offer","itemOffered":{"@type":"Service","name":"스포츠 회복 마사지"}}
     ]
-  }
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.3",
+    "reviewCount": 3,
+    "bestRating": 5,
+    "worstRating": 1
+  },
+  "review": [
+    {
+      "@type": "Review",
+      "reviewRating": {"@type":"Rating","ratingValue":4,"bestRating":5,"worstRating":1},
+      "author": {"@type":"Person","name":"수원 직장인 고객"},
+      "reviewBody": "회사 일 때문에 목과 어깨가 돌덩이처럼 굳었어요. 수원에서 밤 늦게 예약했는데 생각보다 빨리 와주셨어요. 집에서 받는 건데도 전문적인 느낌이었고, 손이 뜨겁고 힘이 적당히 들어가는데 아픈 데를 콕콕 찔러주셔서 다음 날 몸이 진짜 가벼웠습니다. 수원에서 출장마사지 처음 받아봤는데 만족해요."
+    },
+    {
+      "@type": "Review",
+      "reviewRating": {"@type":"Rating","ratingValue":4,"bestRating":5,"worstRating":1},
+      "author": {"@type":"Person","name":"분당 직장인 고객"},
+      "reviewBody": "성남 분당에서 받았어요. 회식 다음 날 온몸이 쑤셔서 급하게 전화했는데 한 시간 만에 와주셨어요. 종아리랑 허리 위주로 부탁드렸는데 알아서 뭉친 곳을 잘 찾아주시더라고요. 아프면서도 시원한 느낌이고, 90분에 12만원, 다음 날 컨디션이 너무 좋아서 또 부를 것 같아요."
+    },
+    {
+      "@type": "Review",
+      "reviewRating": {"@type":"Rating","ratingValue":5,"bestRating":5,"worstRating":1},
+      "author": {"@type":"Person","name":"기흥 임산부 고객"},
+      "reviewBody": "용인 기흥구 아파트에서 받았어요. 임신 6개월 때 허리가 너무 아파서 찾았는데, 임산부 가능한 곳이 많지 않더라고요. 옆으로 누워서 등이랑 다리를 집중해주셨고, 살면서 이렇게 시원한 적이 없었어요. 70분에 10만원 조금 넘었는데 다음 날 아침에 다리랑 발이 날아갈 듯 가벼웠어요. 출산 후에도 또 받을 생각이에요."
+    }
+  ]
 }
 </script>
 <!-- Structured data: WebSite + sitelinks search box -->
@@ -365,6 +392,14 @@
       <a href="areas/migeum.html">미금역</a><a href="areas/sunae.html">수내역</a>
       <a href="areas/jeongja.html">정자역</a><a href="areas/seohyeon.html">서현역</a>
     </div>
+    <p class="lead reveal d2" style="margin-top:40px">지역별로 자주 찾는 주제도 함께 살펴보세요. 동네 특성에 맞춘 코스·이용 안내를 정리했습니다.</p>
+    <div class="area-chips reveal d2">
+      <a href="areas/suwon.html">수원 심야 출장마사지</a><a href="magazine/suwon-guide.html">수원 이용 가이드</a>
+      <a href="areas/dongtan.html">동탄 신도시 방문 마사지</a><a href="magazine/dongtan-guide.html">동탄 이용 가이드</a>
+      <a href="areas/yongin.html">용인 출장 스웨디시</a><a href="magazine/yongin-guide.html">용인 이용 가이드</a>
+      <a href="areas/bundang.html">분당 아로마 출장마사지</a><a href="areas/giheung.html">기흥 임산부 측와위 케어</a>
+      <a href="areas/suji.html">수지 딥티슈 출장</a><a href="areas/osan.html">오산 스포츠 회복 마사지</a>
+    </div>
   </div>
 </section>
 
@@ -426,6 +461,36 @@
       </a>
     </div>
     <div style="margin-top:40px" class="reveal d2"><a class="btn btn-ghost" href="magazine/index.html">매거진 전체 보기</a></div>
+  </div>
+</section>
+
+<!-- ===================== REVIEWS (실제 후기) ===================== -->
+<section class="section areas-band" id="reviews">
+  <div class="wrap" style="max-width:840px">
+    <span class="eyebrow reveal">REAL REVIEW</span>
+    <h2 class="section-title reveal d1">실제 이용 후기</h2>
+    <p class="lead reveal d2">게재 동의를 받은 <strong style="color:var(--gold-hi)">실제 이용 고객</strong>의 후기만 과장·왜곡 없이 싣습니다. 지역별 더 많은 후기와 이용 안내는 각 <a href="areas.html">지역 페이지</a>에서 확인하실 수 있습니다.</p>
+    <div class="review-list reveal d2">
+      <figure class="review-card">
+        <div class="stars" aria-label="별점 5점 만점에 4점">★★★★☆</div>
+        <blockquote>회사 일 때문에 목과 어깨가 돌덩이처럼 굳었어요. 수원에서 밤 늦게 예약했는데 생각보다 빨리 와주셨어요. 집에서 받는 건데도 전문적인 느낌이었고, 손이 뜨겁고 힘이 적당히 들어가는데 아픈 데를 콕콕 찔러주셔서 다음 날 몸이 진짜 가벼웠습니다. 수원에서 출장마사지 처음 받아봤는데 만족해요.</blockquote>
+        <figcaption class="meta">— 수원 직장인 고객 · 60분 · 약 9만원대 · <a href="areas/suwon.html">수원 출장마사지</a></figcaption>
+      </figure>
+      <figure class="review-card">
+        <div class="stars" aria-label="별점 5점 만점에 4점">★★★★☆</div>
+        <blockquote>성남 분당에서 받았어요. 회식 다음 날 온몸이 쑤셔서 급하게 전화했는데 한 시간 만에 와주셨어요. 종아리랑 허리 위주로 부탁드렸는데 알아서 뭉친 곳을 잘 찾아주시더라고요. 아프면서도 시원한 느낌이고, 90분에 12만원, 다음 날 컨디션이 너무 좋아서 또 부를 것 같아요.</blockquote>
+        <figcaption class="meta">— 분당 직장인 고객 · 90분 · 12만원 · <a href="areas/bundang.html">성남·분당 출장마사지</a></figcaption>
+      </figure>
+      <figure class="review-card">
+        <div class="stars" aria-label="별점 5점 만점에 5점">★★★★★</div>
+        <blockquote>용인 기흥구 아파트에서 받았어요. 임신 6개월 때 허리가 너무 아파서 찾았는데, 임산부 가능한 곳이 많지 않더라고요. 옆으로 누워서 등이랑 다리를 집중해주셨고, 살면서 이렇게 시원한 적이 없었어요. 70분에 10만원 조금 넘었는데 다음 날 아침에 다리랑 발이 날아갈 듯 가벼웠어요. 출산 후에도 또 받을 생각이에요.</blockquote>
+        <figcaption class="meta">— 기흥 임산부 고객 · 70분 · 측와위 케어 · <a href="areas/giheung.html">기흥 출장마사지</a></figcaption>
+      </figure>
+    </div>
+    <div class="review-actions reveal d3">
+      <a class="btn btn-gold" href="tel:0508-202-4717">전화예약 0508-202-4717</a>
+      <a class="btn btn-ghost" href="areas.html">지역별 후기·이용 안내</a>
+    </div>
   </div>
 </section>
 
